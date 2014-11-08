@@ -3,4 +3,5 @@
 ```shell
 git config --global user.name "Lancer He"
 git config --global user.email "lancer.he@gmail.com"
+git config --global core.autocrlf true
 ```
