@@ -2,7 +2,7 @@ function read_query( packet )
         if packet:byte() == proxy.COM_QUERY then
                 if is_alter(packet) or is_create(packet) or is_drop(packet) then
                         proxy.queries:append(1, packet)
-                        if  'Test_' == get_dbname(packet):sub(1,5) then
+                        if  'test_' == get_dbname(packet):sub(1,5) then
                                 return proxy.PROXY_SEND_QUERY
                         end
                         proxy.queries:append(2, string.char(proxy.COM_INIT_DB) .. 'notify', {resultset_is_needed = true} )
@@ -20,7 +20,7 @@ function read_query_result(inj)
                 return proxy.PROXY_IGNORE_RESULT
         end
 
-        if  'Test_' == get_dbname(inj.query):sub(1,5) then
+        if  'test_' == get_dbname(inj.query):sub(1,5) then
                 return
         end
 
