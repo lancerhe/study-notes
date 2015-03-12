@@ -44,10 +44,10 @@ function is_alter(query)
 end
 
 function get_dbname(query)
-        if type( string.match(query, "`(%w+)`%.") ) == 'string' then
-                return string.match(query, "`(%w+)`%.")
+        if string.match(query, "`([A-Za-z0-9_]+)`%.") == nil then
+                return string.lower(proxy.connection.client.default_db)
         else
-                return proxy.connection.client.default_db
+                return string.lower(string.match(query, "`([A-Za-z0-9_]+)`%."))
         end
 end
 
