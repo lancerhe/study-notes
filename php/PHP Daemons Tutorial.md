@@ -1,0 +1,1 @@
+> 转载自：<http://collaboradev.com/2011/03/31/php-daemons-tutorial/#codesyntax_1>
