@@ -15,3 +15,9 @@ git stash
 git pull
 git status
 git stash pop stash@{0}
+```
+
+重新检出
+```
+git reset --hard origin/master
+```
