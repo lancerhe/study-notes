@@ -25,6 +25,8 @@ PHP_FUNCTION(dex_string) {
 }
 
 PHP_FUNCTION(dex_long) {
+    // ZVAL_LONG(return_value, 42);  // 两种模式
+    // return 
     RETURN_LONG(43);
 }
 
