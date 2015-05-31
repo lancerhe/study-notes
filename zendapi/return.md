@@ -1,3 +1,4 @@
+```
 RETURN_RESOURCE(resource)
     返回一个资源。
 RETURN_BOOL(bool)
@@ -18,6 +19,7 @@ RETURN_FALSE
     返回一个布尔值假。
 RETURN_TRUE
     返回一个布尔值真。
+```
 
 ```c
 PHP_FUNCTION(dex_string) {
