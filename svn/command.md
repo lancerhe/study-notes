@@ -8,4 +8,7 @@ vendor
 composer.lock' > .svnignore
 
 svn propset svn:ignore -F .svnignore .
+
+# Remove .svn folder
+find . -type d -name ".svn" | xargs rm -rf
 ```
