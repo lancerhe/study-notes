@@ -26,3 +26,9 @@ git reset --hard origin/master
 ```
 git commit --amend -m "Add aritcle: Setting Up with AWS EC2"
 ```
+
+分支
+```
+git tag -a v1.0.0 -m "release version 1.0.0"
+git push origin --tags
+```
