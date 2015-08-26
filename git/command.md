@@ -21,3 +21,14 @@ git stash pop stash@{0}
 ```
 git reset --hard origin/master
 ```
+
+修改上次提交的注释
+```
+git commit --amend -m "Add aritcle: Setting Up with AWS EC2"
+```
+
+分支
+```
+git tag -a v1.0.0 -m "release version 1.0.0"
+git push origin --tags
+```
