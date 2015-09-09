@@ -1,0 +1,8 @@
+```
+UPDATE user SET password=PASSWORD('ergfdks6624jkho4') WHERE user='sdk';
+
+CREATE DATABASE `sdk` CHARACTER SET utf8; 
+CREATE USER 'sdk'@'%' IDENTIFIED BY '4u2392JGNKCXWOjd'; 
+GRANT ALL ON `sdk`.* TO 'sdk'@'%' WITH GRANT OPTION; 
+FLUSH PRIVILEGES;
+```
