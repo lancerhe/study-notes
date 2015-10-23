@@ -14,3 +14,8 @@ ps -ylC php-fpm --sort:rss
 # php进程平均消耗内存
 ps --no-headers -o "rss,cmd" -C php-fpm | awk '{sum+=$1} END {printf ("%d%s\n", sum/NR/1024, "M")}'
 ```
+
+# 文件头部增加一行
+```
+sed -i '1i\use sdk;' /tmp/client_device.sql.20151021
+```
