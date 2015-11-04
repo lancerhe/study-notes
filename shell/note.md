@@ -19,3 +19,8 @@ ps --no-headers -o "rss,cmd" -C php-fpm | awk '{sum+=$1} END {printf ("%d%s\n", 
 ```
 sed -i '1i\use sdk;' /tmp/client_device.sql.20151021
 ```
+
+# 去除文件中的^M字符
+```
+sed -i 's/\r//g' /home/html/test.php
+```
