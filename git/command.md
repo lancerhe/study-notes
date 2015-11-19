@@ -27,8 +27,18 @@ git reset --hard origin/master
 git commit --amend -m "Add aritcle: Setting Up with AWS EC2"
 ```
 
-分支
+Tag
 ```
 git tag -a v1.0.0 -m "release version 1.0.0"
 git push origin --tags
+```
+
+Branch
+```
+# 创建分支
+git branch activerecord
+# 切换分支
+git checkout activerecord
+# 推送到远端Github
+git push origin activerecord
 ```
