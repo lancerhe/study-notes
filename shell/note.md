@@ -24,3 +24,7 @@ sed -i '1i\use sdk;' /tmp/client_device.sql.20151021
 ```
 sed -i 's/\r//g' /home/html/test.php
 ```
+# 获取当前执行文件所在目录
+```
+$(cd `dirname $0`; pwd)
+```
