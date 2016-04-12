@@ -11,5 +11,8 @@ svn propset svn:ignore -F .svnignore .
 
 # Remove .svn folder
 find . -type d -name ".svn" | xargs rm -rf
+
+# multi remove
+svn status | grep ! | awk '{print $2}' | xargs svn del
 ```
 
