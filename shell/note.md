@@ -37,3 +37,12 @@ cat >> /etc/security/limits.conf <<-EOF
 * hard nproc 65535
 EOF
 ```
+# 设置文件保护权限
+```
+chattr +i /etc/passwd
+lsattr /etc/passwd
+
+—-i——–e- /etc/passwd
+
+chattr -i /etc/shadow
+```
