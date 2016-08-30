@@ -46,3 +46,10 @@ lsattr /etc/passwd
 
 chattr -i /etc/shadow
 ```
+
+
+升级了 oh-my-zsh 也一样，打开终端后，加载到 oh-my-zsh 很慢。
+```
+sudo rm -rf /private/var/log/asl/*.asl
+```
+清理了终端 log 就好了
